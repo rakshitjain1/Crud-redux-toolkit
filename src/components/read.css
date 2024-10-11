@@ -1,0 +1,115 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background for better contrast */
+}
+
+h2 {
+    text-align: center; /* Center align the title */
+    margin: 20px 0; /* Margin for spacing */
+    color: #333; /* Darker color for the title */
+}
+
+/* Radio Button Group */
+.radio-group {
+    display: flex; /* Flex layout */
+    justify-content: center; /* Center align items */
+    margin-bottom: 20px; /* Space below the radio buttons */
+}
+
+.radio-group div {
+    margin: 0 15px; /* Space between radio buttons */
+}
+
+/* Container for User Data */
+.container1 {
+    max-width: 1200px; /* Max width for larger screens */
+    /* min-width: none; */
+    margin: 0 auto; /* Center align container */
+    padding: 20px; /* Padding around the container */
+}
+
+/* User List */
+.user-list {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: space-around; /* Space between cards */
+    gap: 20px; /* Gap between cards */
+}
+
+/* Individual User Card */
+.card {
+    border: 1px solid #ddd; /* Border for card */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow */
+    transition: transform 0.2s, box-shadow 0.2s; /* Animation for hover */
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 300px; /* Fixed width for cards */
+    text-align: center; /* Center align text */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+/* Card Body */
+.card-body {
+    padding: 15px; /* Padding for card content */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Larger title size */
+    margin: 0 0 10px; /* Margin below title */
+    color: #333; /* Darker title color */
+}
+
+.card-subtitle {
+    color: #555; /* Slightly darker subtitle color */
+    margin-bottom: 10px; /* Space below subtitle */
+}
+
+.card-text {
+    margin: 10px 0; /* Margin around text */
+}
+
+/* Card Links */
+.card-link {
+    display: inline-block; /* Inline block for links */
+    margin: 5px; /* Space between links */
+    color: #007bff; /* Link color */
+    text-decoration: none; /* No underline */
+    transition: color 0.2s, transform 0.2s; /* Transition for color and scaling */
+}
+
+.card-link:hover {
+    color: #0056b3; /* Darker color on hover */
+    transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container1 {
+        padding: 10px; /* Reduce padding on smaller screens */
+    }
+
+    .user-list {
+        justify-content: center; /* Center align cards on small screens */
+    }
+
+    .radio-group {
+        flex-direction: column; /* Stack radio buttons vertically */
+        align-items: center; /* Center align */
+    }
+
+    .radio-group div {
+        margin: -2px 0; /* Space between radio buttons */
+    }
+
+    .card {
+        width: 90%; /* Full width for smaller screens */
+        margin-bottom: 20px; /* Space below each card */
+    }
+}

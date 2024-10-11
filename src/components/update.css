@@ -1,0 +1,72 @@
+/* update.css */
+
+  
+  .update-container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto; /* Center the form */
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .update-title {
+    text-align: center;
+    color: #5a67d8;
+    margin-bottom: 20px;
+  }
+  
+  .update-form {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+  
+ 
+ 
+  
+  .radio-group {
+    display: flex; /* Use flexbox to align items inline */
+    gap: 20px; /* Space between radio buttons */
+  }
+  
+  .radio-option {
+    display: flex; /* Align input and label horizontally */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .form-check-input {
+    margin-right: 5px; /* Space between radio button and label */
+  }
+  
+  
+  .submit-button {
+    padding: 10px;
+    background-color: #5a67d8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-button:hover {
+    background-color: #434190; /* Darken on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .update-container {
+      padding: 15px;
+    }
+  
+    .form-control {
+      font-size: 14px; /* Smaller font on mobile */
+    }
+  
+    .submit-button {
+      font-size: 14px; /* Smaller button text on mobile */
+    }
+  }
+  
